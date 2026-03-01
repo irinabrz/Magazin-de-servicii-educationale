@@ -8,73 +8,72 @@ Magazin Servicii Educaționale
 
 Etapa 0: 
 
-1.Tema aleasa: Magazin servicii educaționale 
+1.Tema aleasă: Magazin servicii educaționale 
 
-2.Descriere: Site-ul reprezintă un magazin online de servicii educaționale, cu numele de EduPlease , prin intermediul căruia utilizatorii pot vizualiza și achiziționa diferite tipuri de cursuri și pachete de meditații (matematică, informatică, engleza etc.). 
+2.Descriere: Site-ul reprezintă un magazin online de servicii educaționale, cu numele de EduPlease, prin intermediul căruia utilizatorii pot vizualiza și achiziționa diferite tipuri de cursuri și pachete de meditații (matematică, informatică, etc.). 
 
-2.a.Impartirea serviciilor pe categorii si subcategorii: 
+2.a.Împărțirea serviciilor pe categorii și subcategorii: 
 
-Cele 2 categorii vor fi: gimnaziu si liceu. Amandoua categoriile vor avea aceleași subcategorii: Abonamente lunare – de 4,8 sau 12 sedinte, Abonament pentru pregatire intensiva BAC/EN, - de 4,8 sedinte sau all-inclusive, si Acces cursuri/materiale online- one time pay. 
+Cele două categorii vor fi: gimnaziu și liceu. Amândouă categoriile vor avea aceleași subcategorii: Abonamente lunare (4, 8 sau 12 ședințe), Abonament lunar pentru pregătire intensivă BAC/EN, (4, 8 ședințe sau all-inclusive) și Acces cursuri/materiale online (one time pay). 
 
 	 
 
 2.b.Paginile site-ului: 
 
-Site-ul va fi impartit in mai multe pagini: 
+Site-ul va fi împărțit în mai multe pagini: 
 
-1.Acasa- informatii generale, prezentarea serviciilor oferite, review-uri, promotii si oferte. 
+1.Acasă- informații generale, prezentarea serviciilor oferite, review-uri, promoții și oferte. 
 
-2.Despre noi- informatii despre profesorii asociati centrului, defalcati in functie de materiile predare. Probabil vom avea o posibiltate de sortare in aceasta pagina. 
+2.Despre noi- informații despre profesorii asociați centrului, defalcati în funcție de materiile predare. Pagina va include funcționalitate de sortare a profesorilor în funcție de materie. 
 
-3.Preturi- pagina care detaliaza pretul abonamentelor specifice. Abonamentele la gimnaziu si liceu vor avea aceleasi preturi astfel incat nu trebuie sa creem 2 pagini separate 
+3.Prețuri- pagina care detaliază prețul abonamentelor specifice. Abonamentele la gimnaziu și liceu vor avea aceleași prețuri astfel încât nu trebuie să creăm 2 pagini separate .
 
-4.Inscrieti-va: Aici vor fi afisate toate sedintele, cu intervalele orare,materie,meditator, cat si locurile disponibile in grupe. Va fi disponibil un formular care va cere detalii pentru inscriere,si selectarea abonamentelor dorite,la orele disponibile. 
+4.Înscrieți-vă: Aici vor fi afișate toate ședințele, cu intervalele orare, materie, meditator, cât și locurile disponibile în grupe. Va fi disponibil un formular care va cere detalii pentru înscriere, și selectarea abonamentelor dorite, la orele disponibile. 
 
-5.Contacteaza-ne:Intrebari frecvente/FAQ, specificat programul, locatia cat si numarul de contact. 
+5.Contactează-ne:Întrebări frecvente/FAQ, specificat programul, locația cât și numărul de contact. 
 
 2.c.Cuvinte cheie: 
 
-Pentru intreg site-ul:  EduPlease , EduPlease meditații, bucuresti sector 3, meditatii, profesori cu experienta, abonamente lunare, pregătire evaluarea naționala, pregatire bacalaureat, meditatii sector 3, meditatii matematica bucuresti, meditatii informatica bucuresti, meditatii romana bucuresti. 
+Pentru întreg site-ul: EduPlease, EduPlease meditații, București sector 3, meditații, profesori cu experiență, abonamente lunare, pregătire evaluarea naționala, pregătire bacalaureat, centru meditații sector 3, meditații matematică București, meditații informatică București, meditații română București . 
 
-Pentru fiecare pagina in parte: 
+Pentru fiecare pagină în parte: 
 
-1.Acasa: EduPlease , pregătire evaluarea naționala,pregatire bacalaureat, meditatii romana,meditatii matematica, meditatii informatica, profesori dedicati. 
+1.Acasă: EduPlease, pregătire evaluarea naționala, pregătire bacalaureat, meditații română, meditații matematică, meditații informatică, profesori dedicați. 
 
-2. Despre noi:profesori calificati, profesori cu experienta, echipa educationala,meditator matematica, meditator informatica,meditator romana, experienta in pregatire pentru examene, EduPlease meditatii bucuresti. 
+2. Despre noi:profesori calificați, profesori cu experiență, echipa educațională, meditator matematică, meditator informatică, meditator română, experiență în pregătire pentru examene, EduPlease meditații București . 
 
-3. Preturi: costuri pregatire bacalaureat, costuri pregatire evaluarea nationala, abonament lunar, pret meditatii bucuresti, oferte meditatii bucuresti. 
+3. Prețuri: costuri pregătire bacalaureat, costuri pregătire evaluarea națională, abonament lunar, preț meditații București, oferte meditații București . 
 
-4.Contact: EduPlease, EduPlease bucuresti sector 3,program meditatii bucuresti,inscriere  meditatii, adresa centru meditatii, contact EduPlease. 
+4.Înscrieți-vă: înscriere online, înscriere gratuită, înscriere EduPlease, rezervă loc, locuri limitate.
 
- 
+5.Contact: EduPlease, EduPlease București sector 3, program meditații București, înscriere meditații, adresa centru meditații, contact EduPlease. 
 
- 
 
 2.d. Site-uri similare: 
 
 1.Agora learning centre- https://agoracentre.ro/ 
 
-PRO: Continut informativ despre locatie si contact; Pagina de prezentare a abonamentelor bine structurata. 
+PRO: Conținut informativ despre locație și contact; Pagină de prezentare a abonamentelor bine structurată. 
 
-CONTRA:Design si interactivitate limitate;Nu prezinta meditatorii. 
+CONTRA:Design și interactivitate limitate;Nu prezintă meditatorii. 
 
 2.Didactika- https://www.didactika.ro/ 
 
-PRO: Grafice informationale + review-uri ;  Design interactiv. 
+PRO: Grafice informaționale + review-uri ; Design interactiv. 
 
-CONTRA:Incadrarea imaginilor neuniforma; Text mult cu informatii nesuccinte. 
+CONTRA:Încadrarea imaginilor neuniformă; Text mult cu informații nesuccinte. 
 
-3. Meditatiisuper - https://www.meditatiisuper.ro/ 
+3. meditațiisuper - https://www.meditațiisuper.ro/ 
 
-PRO: Platforma online cu materiale si teste; Formulare pentru clienti si pentru viitori colegi de munca; Formular inscriere informativ, cu multe lucururi de completat. 
+PRO: Platforma online cu materiale și teste; Formulare pentru clienți și pentru viitori colegi de muncă; Formular înscriere informativ, cu multe lucruri de completat. 
 
-CONTRA: Design (font/culori/imagini) neplacut vizual; Sectiuni fara titlu derutante. 
+CONTRA: Design (font/culori/imagini) neplăcut vizual; Secțiuni fără titlu, derutante. 
 
 4. Minimathicus- https://minimathicus.ro/ 
 
-PRO: Sectiune FAQ, multe informatii succinte; Prezentarea meditatorilor inspira incredere; Imagini reale, fara sa fie multe generari de AI. 
+PRO: Secțiune FAQ, multe informații succinte despre centru; Prezentarea meditatorilor inspiră încredere; Imagini reale, fără să fie multe generări de AI. 
 
-CONTRA: Formular de inscriere greu de gasit, cu prea putine informatii; Pagini separate pentru gimnaziu/liceu/ciclu primar desi sunt aceleasi preturi. 
+CONTRA: Formular de înscriere greu de găsit, cu prea puține informații; Pagini separate pentru gimnaziu/liceu/ciclu primar deși sunt aceleași prețuri. 
 
  
 
