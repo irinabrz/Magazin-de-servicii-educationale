@@ -1,16 +1,23 @@
 
 body{
-    --culoare-fundal:#FFF8EE;
---culoare-banner:#CCD3E2;
---culoare-accent:#98A3BB;
---culoare-border:#5A6786;
---culoare-text:#172645;
-
-
-    --margine-pagina:120px;
+    --culoare-border:#FFF8EE;
+    --culoare-banner:#CCD3E2;
+    --culoare-accent:#98A3BB;
+    --culoare-fundal:#5A6786;
+    --culoare-text:#172645;
+    --margine-pagina:auto;
     background-color: var(--culoare-fundal);
     font-family:"Poppins",sans-serif;
     color: var(--culoare-text);
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+section, figure, footer, header {
+    padding-left: 10px; 
+    padding-right: 10px;
+    box-sizing: border-box;
 }
 h1{
 font-size:40px;
@@ -31,7 +38,6 @@ line-height: 1.5;
 font-weight: 600;
 }
 section{
-    padding: 40px;
     border-radius: 16px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.1);
      margin-bottom: 40px;
@@ -40,7 +46,7 @@ p{
     border: none;
     margin-bottom:20px;
     line-height:1.8;
-    font-weight: 600px;
+    font-weight: 600;
 }
 header h1 {
     background-color: var(--culoare-banner);
@@ -66,13 +72,45 @@ tfoot{
     background-color: var(--culoare-border);
     color: var(--culoare-fundal);
 }
+caption{
+caption-side: bottom;
+font-weight: bold;
+padding:10px;
+}
+thead th{
+border:3px solid var(--culoare-border);
+}
+
+tbody td, tfoot td{
+border:1px solid var(--culoare-border);
+}
+tbody tr:nth-child(odd){
+box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+color:var(--culoare-text); /* c1 */
+}
+
+tbody tr:nth-child(even){
+box-shadow: inset 0 0 10px rgba(0,0,0,0.35);
+color:var(--culoare-fundal); /* c2 */
+}
+
 
 main{
-    display:grid;
-    gap:30px;
-    margin-left:var(--margine-pagina);
-    margin-right:var(--margine-pagina);
+        max-width:1200px;
+    margin-left:auto;
+    margin-right:auto;
 
+}
+header img{
+    width:120px;
+    height:auto;
+}
+.container-tabel{
+overflow-x:auto;
+}
+img, video, iframe, object {
+    max-width: 100%;
+    height: auto;
 }
 figure {
     text-align: center;
@@ -85,141 +123,132 @@ main img {
     margin-left: auto;
     margin-right: auto;
     border: 1px solid var(--culoare-border);
-    width:60%;
-max-width:800px;
-min-width:250px;
-height:auto;
-
 }
-#welcome {
-     background-color: var(--culoare-banner);
-    padding: 40px 20px;
+#utilizatori-online, #statistici, #site-server,#calendar{
+    background-color: var(--culoare-border);
     margin-bottom: 10px;
-    border: 3px solid var(--culoare-border); 
+    border: 3px solid var(--culoare-accent);
 }
-#review{
-     background-color: var(--culoare-border);
-    padding: 40px 20px;
+#welcome,#anunturi, #review,#despre, #produse, #materii, #galerie-statica, #centru, #prezentare, #inscriere, #contact {
+    background-color: var(--culoare-banner);
+    margin-bottom: 10px;
+    border: 3px solid var(--culoare-border);
+}
+
+ #index-intrebari, #promotii {
+    background-color: var(--culoare-accent);
     margin-bottom: 10px;
     border: 3px solid var(--culoare-text);
-    color: var(--culoare-fundal)
-}
-#anunturi {
-    background-color: var(--culoare-banner);
-    padding: 40px 20px;
-    margin-bottom: 10px;
-    border: 3px solid var(--culoare-border); 
-}
-#despre{
-     background-color: var(--culoare-banner);
-    padding: 40px 20px;
-    margin-bottom: 10px;
-        border: 3px solid var(--culoare-border); 
+    color: var(--culoare-border);
 }
 
-#produse {
-    background-color: var(--culoare-banner);
-    padding: 40px 20px;
-        margin-bottom: 10px;
-            border: 3px solid var(--culoare-border); 
-
-}
-#index-intrebari{
-     background-color: var(--culoare-border);
-    padding: 40px 20px;
-    margin-bottom: 10px;
-    border: 3px solid var(--culoare-text);
-    color: var(--culoare-fundal)
-}
-#programpregatire{
+#programpregatire, #tab-orar {
     background-color: #EFECEA;
-    padding: 40px 20px;
-    margin-bottom: 10px; 
-        border: 3px solid var(--culoare-border); 
-}
-#promotii {
-    background-color: var(--culoare-banner);
-    padding: 40px 20px;
     margin-bottom: 10px;
-    padding:60px 30px;
-        border: 3px solid var(--culoare-border); 
+    border: 3px solid var(--culoare-border);
 }
 
-
+#prezentare, #inscriere {
+    border-width: 5px; 
+}
 #materii img {
     display: block;
     width: 100%;
-    max-width: 1200px; 
+    max-width: 100%; 
     height: auto;
     margin: 0 auto;
 }
-#galerie-statica{
-    background-color: var(--culoare-banner);
-    padding: 40px 20px;
-    margin-bottom: 10px;
-    border: 3px solid var(--culoare-border); 
-}
 
-#materii{
-    background-color: var(--culoare-banner);
-    padding: 40px 20px;
-    margin-bottom: 10px;
-        border: 3px solid var(--culoare-border); 
-}
-#centru{
-    background-color: var(--culoare-banner);
-    padding: 40px 20px;
-    margin-bottom: 10px;
-        border: 3px solid var(--culoare-border); 
+#grid-pagina {
+    display: grid;
+     gap:30px;
+    grid-template-columns: 1fr 2fr 1fr;
+grid-template-areas:
 
+"welcome welcome welcome"
+"calendar contact anunturi"
+"utilizatori-online statistici site-server"
+"centru promotii despre"
+"index-intrebari materii review"
+"produse produse produse";
 }
-#prezentare{
-    background-color: var(--culoare-banner);
-    padding: 40px 20px;
-    margin-bottom: 10px; 
-    border: 5px solid var(--culoare-border);
+#grid-pagina > * {
+    min-width: 0;
 }
-#inscriere{
-    background-color: var(--culoare-banner);
-    padding: 40px 20px;
-    margin-bottom: 10px; 
-    border: 5px solid var(--culoare-border);
-}
-#tab-orar{
-    background-color: #EFECEA;
-    padding: 40px 20px;
-    margin-bottom: 10px;
-        border: 3px solid var(--culoare-border); 
-}
-#contact{
-    background-color: var(--culoare-banner);
-    padding: 40px 20px;
-    margin-bottom: 10px; 
-        border: 3px solid var(--culoare-border); 
-}
+#welcome{grid-area:welcome;}
+#anunturi{grid-area:anunturi;}
+#promotii{grid-area:promotii;}
+#review{grid-area:review;}
+#materii{grid-area:materii;}
+#produse{grid-area:produse;}
+#despre{grid-area:despre;}
+#contact{grid-area:contact;}
+#index-intrebari{grid-area:index-intrebari;}
+#utilizatori-online{grid-area:utilizatori-online;}
+#statistici{grid-area:statistici;}
+#site-server{grid-area:site-server;}
+#calendar{grid-area:calendar;}
+#centru{grid-area:centru;}
 @media screen and (max-width:1200px) {
 
     body{
-        --margine-pagina:100px;
+        --margine-pagina:auto;
     }
-    main{
-gap:25px;
-}
+
 }
 
-@media screen and (max-width:700px) {
-main{
-gap:15px;
+@media (max-width: 991px) {
+
+#grid-pagina {
+
+grid-template-columns: 1fr 1fr;
+
+grid-template-areas:
+
+"welcome welcome"
+            "calendar contact"
+            "anunturi anunturi"
+            "utilizatori-online statistici"
+            "site-server site-server"
+            "centru promotii"
+            "despre review"
+            "index-intrebari index-intrebari"
+            "produse produse";
+
 }
-    body{
-        --margine-pagina:80px;
-    }
+
 }
+@media (max-width: 575px){
+
+#grid-pagina{
+
+grid-template-columns:1fr;
+
+grid-template-areas:
+
+"welcome"
+            "calendar"
+            "contact"
+            "anunturi"
+            "utilizatori-online"
+            "statistici"
+            "site-server"
+            "centru"
+            "materii"
+            "promotii"
+            "review"
+            "despre"
+            "index-intrebari"
+            "produse";
+
+}
+
+}
+
 
 
 footer{
     background-color: var(--culoare-accent);
-    padding: 40px 20px;
     margin-bottom: 10px;
      border: 3px solid var(--culoare-border);
 }
