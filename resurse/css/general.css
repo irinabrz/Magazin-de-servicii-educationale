@@ -5,10 +5,22 @@ body{
     --culoare-accent:#98A3BB;
     --culoare-fundal:#5A6786;
     --culoare-text:#172645;
-    --margine-pagina:auto;
     background-color: var(--culoare-fundal);
     font-family:"Poppins",sans-serif;
     color: var(--culoare-text);
+    padding-left: var(--margine-pagina-mare);
+    padding-right: var(--margine-pagina-mare);
+    font-size: 1rem;
+    transition: font-size 0.3s ease;
+}
+:root {
+  --margine-pagina-mare: 60px;
+  --margine-pagina-medie: 30px;
+  --margine-pagina-mica: 10px;
+  --gap-mare: 30px;
+  --gap-medie: 20px;
+  --gap-mica: 10px;
+  --padding-text: 15px;
 }
 html, body {
     width: 100%;
@@ -17,25 +29,29 @@ html, body {
 section, figure, footer, header {
     padding-left: 10px; 
     padding-right: 10px;
+    padding: var(--padding-text);
     box-sizing: border-box;
 }
 h1{
-font-size:40px;
+font-size:2.2rem;
 line-height: 1.2; 
 letter-spacing: 1px;
 font-weight: 600;
 }
 
 h2{
-font-size:28px;
+font-size:1.95rem;
 line-height: 1.3;
 font-weight: 600;
 }
 
 h3{
-font-size:22px;
+font-size:1.7rem;
 line-height: 1.5;
 font-weight: 600;
+}
+p, li, span {
+    font-size: 1.1rem;
 }
 section{
     border-radius: 16px;
@@ -109,7 +125,9 @@ header img{
 overflow-x:auto;
 }
 img, video, iframe, object {
-    max-width: 100%;
+    width: 100%;
+    max-width: 600px;
+    min-width: 200px;
     height: auto;
 }
 figure {
@@ -161,9 +179,9 @@ main img {
 
 #grid-pagina {
     display: grid;
-     gap:30px;
+    gap: var(--gap-mare);
     grid-template-columns: 1fr 2fr 1fr;
-grid-template-areas:
+    grid-template-areas:
 
 "welcome welcome welcome"
 "calendar contact anunturi"
@@ -198,9 +216,17 @@ grid-template-areas:
 }
 
 @media (max-width: 991px) {
-
+ body {
+    padding-left: var(--margine-pagina-medie);
+    padding-right: var(--margine-pagina-medie);
+    font-size: 1.05rem;
+  }
+  h1 { font-size: 2.1rem; }
+ h2 { font-size: 1.85rem; }
+ h3 { font-size: 1.6rem; }
+ p, li, span { font-size: 1.05rem; }
 #grid-pagina {
-
+gap: var(--gap-medie);
 grid-template-columns: 1fr 1fr;
 
 grid-template-areas:
@@ -219,8 +245,17 @@ grid-template-areas:
 
 }
 @media (max-width: 575px){
-
+body {
+    padding-left: var(--margine-pagina-mica);
+    padding-right: var(--margine-pagina-mica);
+  font-size: 0.9rem;
+  }
+ h1 { font-size: 2rem; }
+ h2 { font-size: 1.75rem; }
+ h3 { font-size: 1.5rem; }
+ p, li, span { font-size: 1rem; }
 #grid-pagina{
+gap: var(--gap-mica);
 
 grid-template-columns:1fr;
 
