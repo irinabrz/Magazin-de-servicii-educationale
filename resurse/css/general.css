@@ -109,6 +109,59 @@ tbody tr:nth-child(even){
 box-shadow: inset 0 0 10px rgba(0,0,0,0.35);
 color:var(--culoare-fundal);
 }
+#link-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-decoration: none;
+    background-color: var(--culoare-fundal);
+    opacity: 0.6;
+    border: 3px solid var(--culoare-accent);
+    border-radius: 50% 50% 10px 10px;
+    box-shadow: inset 0 0 10px rgba(255,255,255,0.3);
+    transform: none;
+    transition: all 0.4s ease;
+    z-index: 1000;
+}
+
+#link-top .sageata {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--culoare-banner);
+    transition: all 0.3s ease;
+}
+
+#link-top:hover {
+    background-color: var(--culoare-accent);
+    opacity: 1;
+}
+
+#link-top:hover .sageata {
+    transform: translate(-50%, -50%) scale(1.4);
+}
+
+#link-top .tooltip {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    background-color: var(--culoare-text);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
 .container-iframe iframe {
     width: 100%;
     max-width: 700px;

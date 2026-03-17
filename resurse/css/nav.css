@@ -10,17 +10,14 @@ ul.meniu, ul.meniu ul{
     margin: 0;
 }
 
-/* meniul principal pe linie */
 ul.meniu{
     display: flex;
 }
 
-/* submeniurile ascunse */
 ul.meniu ul{
     display: none;
 }
 
-/* butoane meniu */
 ul.meniu li{
     width: var(--latime-buton);
     height: var(--inaltime-buton);
@@ -32,14 +29,12 @@ ul.meniu li{
     transition: all 0.4s linear;
 }
 
-/* linkuri */
 ul.meniu li a{
     text-decoration: none;
     color: black;
     display: block;
 }
 
-/* hover buton */
 ul.meniu > li:hover{
     background-color: var(--culoare-contur);
 }
@@ -48,7 +43,6 @@ ul.meniu > li:hover > a{
     color: white;
 }
 
-/* submeniu apare */
 ul.meniu li:hover > ul{
     display: block;
     position: absolute;
@@ -56,13 +50,11 @@ ul.meniu li:hover > ul{
     left: 0;
 }
 
-/* elemente submeniu */
 ul.meniu li ul li{
     width: 100%;
     background-color: var(--culoare-fundal);
 }
 
-/* hover submeniu */
 ul.meniu li ul li:hover{
     background-color: var(--culoare-contur);
 }
@@ -71,9 +63,13 @@ ul.meniu li ul li:hover a{
     color: white;
 }
 
-/* hover iframe */
 .taburi-iframe a:hover {
     background-color: var(--culoare-fundal);
     color: white;
-    transform: translateY(-2px); /* mic lift */
+    transform: translateY(-2px);
+}
+
+#link-top:hover .tooltip {
+    opacity: 1;
+    transform: translateY(0);
 }
