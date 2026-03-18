@@ -2,6 +2,7 @@ nav{
     --latime-buton: 150px;
     --inaltime-buton: 40px;
     background-color: var(--culoare-fundal);
+     justify-content: center;
 }
 
 ul.meniu, ul.meniu ul{
@@ -12,27 +13,31 @@ ul.meniu, ul.meniu ul{
 
 ul.meniu{
     display: flex;
+    gap: 15px;
 }
 
 ul.meniu ul{
     display: none;
 }
 
-ul.meniu li{
-    width: var(--latime-buton);
+ul.meniu li {
+    width: auto; 
+    padding: 0 20px;
     height: var(--inaltime-buton);
-    background-color: var(--culoare-fundal);
-    border: 1px solid var(--culoare-contur);
-    text-align: center;
-    line-height: var(--inaltime-buton);
-    position: relative;
-    transition: all 0.4s linear;
+    background-color: var(--culoare-accent);
+    border-radius: 12px;
+    border: 2px solid var(--culoare-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
 }
 
 ul.meniu li a{
     text-decoration: none;
-    color: black;
     display: block;
+    color: var(--culoare-border);
+    font-weight: 600;
 }
 
 ul.meniu > li:hover{
@@ -49,20 +54,33 @@ ul.meniu li:hover > ul{
     top: 100%;
     left: 0;
 }
-
+ul.meniu li ul {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 5px;
+}
 ul.meniu li ul li{
     width: 100%;
     background-color: var(--culoare-fundal);
+    border:none;
 }
 
 ul.meniu li ul li:hover{
-    background-color: var(--culoare-contur);
+    background-color: var(--culoare-text);
 }
 
 ul.meniu li ul li:hover a{
     color: white;
 }
+ul.meniu > li:hover {
+    background-color: var(--culoare-accent);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
 
+ul.meniu > li:hover > a {
+    color: var(--culoare-text);
+}
 .taburi-iframe a:hover {
     background-color: var(--culoare-fundal);
     color: white;
@@ -73,3 +91,12 @@ ul.meniu li ul li:hover a{
     opacity: 1;
     transform: translateY(0);
 }
+#link-top:hover {
+    background-color: var(--culoare-accent);
+    opacity: 1;
+}
+
+#link-top:hover .sageata {
+    transform: translate(-50%, -50%) scale(1.4);
+}
+

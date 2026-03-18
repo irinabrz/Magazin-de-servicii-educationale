@@ -79,10 +79,10 @@ Etapa 2:
 Alegerea culorilor pentru site:
 
 Pentru site am ales o schemă cromatică calmă și profesională, bazată pe nuanțe de albastru și galben deschis:
-#FFF8EE – galbui deschis: Creează o atmosferă caldă și primitoare, ușor de citit pe ecrane, fără să obosească ochii.Galbenul deschis transmite căldură, optimism și prietenie.
-#CCD3E2 – albastru deschis: Evidențiază titlurile și zonele principale, oferind contrast plăcut cu fundalul.Albastrul deschis evocă liniște, calm și profesionalism. Ajută la concentrare și transmite siguranță.
-#98A3BB – albastru închis: Folosit pentru butoane și elemente importante, atrage atenția fără a fi agresiv.Albastrul închis sugerează stabilitate, încredere și autoritate, fiind asociat cu profesionalismul.
-#5A6786 – gri-albastru deschis: Definirea clară a secțiunilor și separarea vizuală a elementelor.Griul inspiră echilibru, neutralitate și profesionalism.
+#fffaf3 – galbui deschis: Creează o atmosferă caldă și primitoare, ușor de citit pe ecrane, fără să obosească ochii.Galbenul deschis transmite căldură, optimism și prietenie.
+#c4d1ec – albastru deschis: Evidențiază titlurile și zonele principale, oferind contrast plăcut cu fundalul.Albastrul deschis evocă liniște, calm și profesionalism. Ajută la concentrare și transmite siguranță.
+#8797bc – albastru închis: Folosit pentru butoane și elemente importante, atrage atenția fără a fi agresiv.Albastrul închis sugerează stabilitate, încredere și autoritate, fiind asociat cu profesionalismul.
+#546794 – gri-albastru deschis: Definirea clară a secțiunilor și separarea vizuală a elementelor.Griul inspiră echilibru, neutralitate și profesionalism.
 #172645 – gri-albastru închis: Asigură lizibilitate maximă și un contrast bun cu fundalul.Culoarea închisă pentru text transmite seriozitate, claritate și concentrare.
 
  
