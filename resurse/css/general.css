@@ -8,17 +8,17 @@ body{
     background-color: var(--culoare-fundal);
     font-family:"Poppins",sans-serif;
     color: var(--culoare-text);
-    padding-left: var(--margine-pagina-mare);
-    padding-right: var(--margine-pagina-mare);
+    padding-left: 0;
+    padding-right: 0;
     font-size: 1rem;
     transition: font-size 0.3s ease;
 }
 :root {
-  --margine-pagina-mare: 60px;
-  --margine-pagina-medie: 30px;
+  --margine-pagina-mare: 25px;
+  --margine-pagina-medie: 15px;
   --margine-pagina-mica: 10px;
-  --gap-mare: 30px;
-  --gap-medie: 20px;
+  --gap-mare: 25px;
+  --gap-medie: 15px;
   --gap-mica: 10px;
   --padding-text: 15px;
 }
@@ -27,8 +27,6 @@ html, body {
     overflow-x: hidden;
 }
 section, figure, footer, header {
-    padding-left: 10px; 
-    padding-right: 10px;
     padding: var(--padding-text);
     box-sizing: border-box;
 }
@@ -167,7 +165,7 @@ color:var(--culoare-fundal);
 
 .container-iframe iframe {
     width: 100%;
-    max-width: 700px;
+    max-width: 100%;
     height: 400px;
     border: 4px solid var(--culoare-accent);
     border-radius: 12px;
@@ -195,19 +193,13 @@ color:var(--culoare-fundal);
     transition: all 0.3s ease;
 }
 
-.container-iframe iframe {
+main {
     width: 100%;
-    max-width: 700px;
-    height: 400px;
-    border: 4px solid var(--culoare-text);
-    border-radius: 10px;
-    background: white;
-}
-main{
-    max-width:1200px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: var(--margine-pagina-mare);
+    padding-right: var(--margine-pagina-mare);
 
 }
 header img{
@@ -219,14 +211,13 @@ overflow-x:auto;
 }
 img, video, iframe, object {
     width: 100%;
-    max-width: 600px;
-    min-width: 200px;
+    max-width: 100%;
     height: auto;
 }
 figure {
     text-align: center;
     border: 1px solid var(--culoare-border);
-     margin: 40px auto;
+    margin: 40px auto;
 
 }
 main img {
@@ -268,10 +259,14 @@ main img {
     height: auto;
     margin: 0 auto;
 }
+p, h1, h2, h3, li, span {
+    word-break: break-word;
+}
 #grid-pagina {
     display: grid;
     gap: var(--gap-mare);
     grid-template-columns: 1fr 2fr 1fr;
+    
     grid-template-areas:
 
 "welcome welcome welcome"
@@ -283,6 +278,8 @@ main img {
 }
 #grid-pagina > * {
     min-width: 0;
+    overflow: hidden;
+
 }
 #welcome{grid-area:welcome;}
 #anunturi{grid-area:anunturi;}
@@ -298,39 +295,37 @@ main img {
 #site-server{grid-area:site-server;}
 #calendar{grid-area:calendar;}
 #centru{grid-area:centru;}
-@media screen and (max-width:1200px) {
-
-    body{
-        --margine-pagina:auto;
-    }
-
-}
 
 @media (max-width: 991px) {
  body {
+    margin: 0;
     padding-left: var(--margine-pagina-medie);
     padding-right: var(--margine-pagina-medie);
     font-size: 1.05rem;
   }
   h1 { font-size: 2.1rem; }
  h2 { font-size: 1.85rem; }
- h3 { font-size: 1.6rem; }
+ h3 { font-size: 1.3rem; }
  p, li, span { font-size: 1.05rem; }
+     #grid-pagina {
+    max-width: 600px;
+    margin: 0 auto;
+    }
+
 #grid-pagina {
 gap: var(--gap-medie);
-grid-template-columns: 1fr 1fr;
+grid-template-columns: minmax(250px, 2fr) minmax(250px, 2fr);
 
 grid-template-areas:
-
 "welcome welcome"
-            "calendar contact"
-            "anunturi anunturi"
-            "utilizatori-online statistici"
-            "site-server site-server"
-            "centru promotii"
-            "despre review"
-            "index-intrebari index-intrebari"
-            "produse produse";
+"calendar contact"
+"anunturi anunturi"
+"utilizatori-online statistici"
+"site-server site-server"
+"centru promotii"
+"despre review"
+"index-intrebari index-intrebari"
+"produse produse";
 
 }
 
@@ -339,7 +334,7 @@ grid-template-areas:
 body {
     padding-left: var(--margine-pagina-mica);
     padding-right: var(--margine-pagina-mica);
-  font-size: 0.9rem;
+    font-size: 0.9rem;
   }
  h1 { font-size: 2rem; }
  h2 { font-size: 1.75rem; }
