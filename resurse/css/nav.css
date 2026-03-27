@@ -1,6 +1,6 @@
 nav{
-    --latime-buton: 150px;
-    --inaltime-buton: 40px;
+    --latime-buton: 180px;
+    --inaltime-buton: 60px;
     background-color: var(--culoare-fundal);
      justify-content: center;
 }
@@ -21,8 +21,9 @@ ul.meniu ul{
 }
 
 ul.meniu li {
-    width: auto; 
-    padding: 0 20px;
+    width: var(--latime-buton);
+    padding: 0;
+    flex: 1;
     height: var(--inaltime-buton);
     background-color: var(--culoare-accent);
     border-radius: 12px;
@@ -49,7 +50,7 @@ ul.meniu > li:hover > a{
 }
 
 ul.meniu li:hover > ul{
-    display: block;
+    display: flex;
     position: absolute;
     top: 100%;
     left: 0;
@@ -58,11 +59,18 @@ ul.meniu li ul {
     border-radius: 10px;
     overflow: hidden;
     margin-top: 5px;
+        display: none;
+    padding: 10px 0; 
+    gap: 8px;
+        display: none;
+    flex-direction: column;
 }
 ul.meniu li ul li{
     width: 100%;
     background-color: var(--culoare-fundal);
     border:none;
+    padding: 10px 20px;
+    margin: 3px 8px;
 }
 
 ul.meniu li ul li:hover{
