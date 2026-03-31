@@ -385,3 +385,84 @@ footer{
     max-width: 1200px;
     border-radius: 12px; 
     }
+@media print {
+    #grid-pagina, main, section, article, header, footer {
+        display: block  ;
+        width: 100%  ;
+        position: static  ;
+    }
+    img, video, iframe, canvas, object, figure, figcaption, 
+    .container-iframe, .taburi-iframe, #link-top, .burger, #toggle {
+        display: none  ;
+    }
+    a {
+        text-decoration: none  ;
+        color: black  ;
+        background: none  ;
+    }
+    header h1 {
+        display: block  ;
+        text-align: center  ;
+        margin: 50px auto 20px auto  ;
+        border: none  ;
+        background: none  ;
+    }
+    nav {
+        display: block  ;
+    }
+    ul.meniu {
+        display: block  ;
+        list-style-type: disc  ;
+        padding-left: 40px  ;
+    }
+    ul.meniu li {
+        display: list-item  ;
+        width: auto  ;
+        border: none  ;
+        background: none  ;
+        padding: 5px 0  ;
+    }
+    ul.meniu ul {
+        display: block  ;
+        list-style-type: circle  ;
+        padding-left: 20px  ;
+    }
+    nav { page-break-after: always; }
+    footer { page-break-before: always; }
+    .banner-proiect {
+        display: block  ;
+        position: absolute  ;
+        top: 0  ;
+        right: 0  ;
+        width: 50%  ;
+        border: 3px double black  ; 
+        padding: 10px  ;
+        text-align: center  ;
+        background: white  ;
+        z-index: 10000  ;
+    }
+    body::after {
+        content: "Brezeanu \A Irina-Maria"; 
+        white-space: pre;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50pt;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.3)  ;
+        z-index: 9999;
+        pointer-events: none;
+    }
+    @page :left {
+        margin: 1cm 1cm 1cm 2cm;
+    }
+    @page :right {
+        margin: 1cm 2cm 1cm 1cm;
+    }
+}
