@@ -1,0 +1,172 @@
+@use "sass:color";
+
+$bg-light: #fffaf3;
+$blue-mid: #8797bc;
+$blue-light: #c4d1ec; 
+$blue-dark:#546794;
+$text: #172645;
+$nul: 0;
+
+nav {
+    background-color: $blue-mid;
+    position: relative;
+    z-index: 100;
+}
+
+ul.meniu, ul.meniu ul {
+    list-style-type: none;
+    padding: $nul;
+    margin: $nul;
+}
+
+ul.meniu {
+    display: flex;
+    
+    > li {
+        position: relative;
+        background-color: $blue-mid;
+        border: 1px solid rgba(255,255,255,0.1);
+        
+        a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 15px 20px;
+            color: $bg-light;
+            text-decoration: none;
+            transition: all 0.3s linear;
+            &:hover {
+                color: $blue-light;
+            }
+        }
+        ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: $blue-mid;
+            min-width: 200px;
+            z-index: 10;
+
+            li a:hover {
+                color: $blue-light;
+            }
+        }
+
+        &:hover > ul {
+            display: block;
+        }
+    }
+    @media (min-width: 901px) {
+        > li:first-child > a {
+            color: transparent;
+            i { color: $bg-light; }
+            
+            &:hover {
+                color: $blue-light;
+                i { color: $blue-light; }
+            }
+        }
+    }
+}
+@media (max-width: 900px) and (min-width: 701px) {
+    .meniu > li > a {
+        font-size: 0; 
+        i { font-size: 22px; color: $bg-light; }
+        &:hover i { color: $blue-light; }
+    }
+}
+@media (max-width: 700px) {
+    #toggle { display: none; }
+
+    .burger {
+        display: block;
+        background: $blue-mid;
+        color: $bg-light;
+        font-size: 30px;
+        padding: 15px;
+        text-align: right;
+        cursor: pointer;
+        position: relative;
+        z-index: 1001;
+    }
+
+    nav {
+        display: block;
+        width: 100%;
+        background: $blue-mid;
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(-20px); 
+        transition: all 0.5s ease-in-out;
+        overflow: hidden; 
+    }
+
+    #toggle:checked ~ nav {
+        max-height: 2000px;
+        opacity: 1;
+        transform: translateY(0);
+        overflow: visible; 
+    }
+
+    ul.meniu {
+        flex-direction: column;
+        
+        > li {
+            width: 100%;
+            position: relative;
+
+            > a {
+                padding: 20px;
+                font-size: 18px;
+                color: $bg-light;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                display: flex;
+                justify-content: space-between;
+
+                &:hover {
+                    color: $blue-light;
+                }
+            }
+
+            ul {
+                display: none;
+                position: static;
+                background-color: rgba(0, 0, 0, 0.1);
+                
+                li a {
+                    padding: 15px 40px;
+                    color: $bg-light;
+                    &:hover { color: $blue-light; }
+                }
+            }
+
+            &:hover > ul {
+                display: block;
+            }
+        }
+        > li:first-child > a {
+            color: $bg-light  ;
+            i { color: $bg-light  ; }
+            &:hover {
+                color: $blue-light  ;
+                i { color: $blue-light  ; }
+            }
+        }
+    }
+}
+
+/*Link Top */
+#link-top {
+    &:hover {
+        background-color: var(--culoare-accent);
+        opacity: 1;
+        .tooltip {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .sageata {
+            transform: translate(-50%, -50%) scale(1.4);
+        }
+    }
+}
