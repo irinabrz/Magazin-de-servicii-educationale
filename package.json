@@ -1,0 +1,56 @@
+{
+  "name": "proiect-tehnici-web",
+  "version": "1.0.0",
+  "description": "proiect etapa 4 node",
+  "keywords": [
+    "EduPlease",
+    "EduPlease",
+    "meditații",
+    "București",
+    "sector",
+    "3",
+    "meditații",
+    "profesori",
+    "cu",
+    "experiență",
+    "abonamente",
+    "lunare",
+    "pregătire",
+    "evaluarea",
+    "națională",
+    "pregătire",
+    "bacalaureat",
+    "centru",
+    "meditații",
+    "sector",
+    "3",
+    "meditații",
+    "matematică",
+    "București",
+    "meditații",
+    "informatică",
+    "București",
+    "meditații",
+    "română",
+    "București"
+  ],
+  "homepage": "https://github.com/irinabrz/Magazin-de-servicii-educationale#readme",
+  "bugs": {
+    "url": "https://github.com/irinabrz/Magazin-de-servicii-educationale/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irinabrz/Magazin-de-servicii-educationale.git"
+  },
+  "license": "ISC",
+  "author": "Brezeanu Irina-Maria",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^5.0.1",
+    "express": "^5.2.1"
+  }
+}
