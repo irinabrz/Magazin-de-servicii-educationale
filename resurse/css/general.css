@@ -21,6 +21,7 @@ body{
   --gap-medie: 15px;
   --gap-mica: 10px;
   --padding-text: 15px;
+  --culoare-vizitat: #546794;
 }
 html, body {
     width: 100%;
@@ -465,4 +466,54 @@ footer{
     @page :right {
         margin: 1cm 2cm 1cm 1cm;
     }
+}
+.video-prezentare-profa {
+    width: 90%; 
+    max-width: 600px;
+    min-width: 280px;
+    
+    display: block;
+    margin: 10px auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+video::cue {
+    background-color: transparent; 
+    color: white;                  
+    text-shadow: 2px 2px 4px black; 
+    font-size: 1.1rem;
+    font-family: Arial, sans-serif;
+}
+
+a:visited {
+    color: var(--culoare-vizitat);
+}
+a:active {
+    border: 2px solid currentColor;
+    outline: none;
+}
+a[href^="http"]::before {
+    content: "⮳";
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 5px;
+    transition: color 0.3s;
+}
+
+a[href^="http"]:hover::before {
+    color: #546794;
+}
+main a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    background-image: radial-gradient(circle, #fffaf3 0%, #fffaf3 40%, transparent 80%, transparent 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 0% 0%;
+    transition: background-size 0.5s ease;
+}
+main a:hover {
+    background-size: 100% 100%;
 }

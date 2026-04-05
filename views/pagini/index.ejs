@@ -1,78 +1,8 @@
 <!DOCTYPE html>
 <html lang="ro">
-<head>
-    <meta charset ='utf-8'>
-    <meta name="author" content="Brezeanu Irina-Maria">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Centru educațional EduPlease în București. Păstrăm prețurile de anul trecut, creștem motivația și educația!">
-    <meta name="keywords" content=" EduPlease, EduPlease meditații, București sector 3, meditații, profesori cu experiență, abonamente lunare, pregătire evaluarea națională, pregătire bacalaureat, centru meditații sector 3, meditații matematică București, meditații informatică București, meditații română București">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <link rel="stylesheet" href="resurse/css/general.css">
-     <link rel="stylesheet" href="resurse/css/nav.css">
-    <title>EduPlease</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./resurse/imagini/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="./resurse/imagini/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="./resurse/imagini/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./resurse/imagini/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="./resurse/imagini/favicon/site.webmanifest" />
-</head>
+<%- include('../fragmente/head') %>
 <body id="top">
-    <header>
-        <h1> Centrul EduPlease </h1>
-        <img src="./resurse/imagini/sigla.png" alt ="sigla" />
-       <input type="checkbox" id="toggle">
-  
-  <label for="toggle" class="burger">
-    <i class="fa-solid fa-bars"></i> </label>
-        <nav>
-            <ul class="meniu">
-                <li> <a href="#">Acasa<i class="fa-solid fa-house"></i></a> 
-                <ul>
-                    <li>
-                        <a href="index.html#welcome">Bine ați venit!</a>
-
-                    </li>
-                </ul>
-                </li>
-                <li><a href="#"> Despre noi<i class="fa-solid fa-circle-info"></i></a>
-                <ul>
-                     <li>
-                        <a href="index.html#despre">Profesorii nostri</a>
-
-                    </li>
-                     <li>
-                        <a href="index.html#review">Review-uri</a>
-
-                    </li>
-                </ul>
-                </li>
-                <li><a href="#">Prețuri<i class="fa-solid fa-store"></i></a>
-                    <ul>
-                         <li>
-                        <a href="index.html#promotii">Promoții și oferte</a>
-
-                    </li>
-                     <li>
-                        <a href="index.html#produse">Abonamente</a>
-
-                    </li>
-                    </ul>
-                
-                </li>
-                <li><a href="#">Înscrieți-vă!<i class="fa-solid fa-chalkboard-user"></i></a>
-                <ul>
-                     <li>
-                        <a href="formular.html">Formular inscriere</a>
-
-                    </li>
-                    </ul>
-                </li>
-                <li><a href="index.html#contact">Contactează-ne<i class="fa-regular fa-comment"></i></a></li>
-                </ul>
-        </nav>
-    </header>
+    <%- include('../fragmente/header') %>
    <main>
         <div id="grid-pagina">
 
@@ -101,19 +31,31 @@
     </figcaption>
 </figure>
 
-            <div id="container-video" style="text-align: center;">
-                <img style="width:50%" class="sedinte" src="./resurse/imagini/copil_mate.jpg" alt="copil la tabla" title="copil la tabla">
-                <div id="centrare-video">
-                    <p>Suntem alături de fiecare copil pe drumul cunoașterii.</p>
-                    <div id="clip-video">
-                        <div id="stil-video">
-                            <video width="320" height="240"  playsinline autoplay loop muted>
-                                <source src="./resurse/video/copil_la_tabla.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-                </div>
+          <div id="container-video" style="text-align: center;">
+    <img style="width:50%" class="sedinte" src="/resurse/imagini/copil_mate.jpg" alt="copil la tabla" title="copil la tabla">
+    
+    <div id="centrare-video" class="video-vtt">
+        <p>Suntem alături de fiecare copil pe drumul cunoașterii.</p>
+        <div id="clip-video">
+            <div id="stil-video">
+                
+                <video controls 
+                       poster="/resurse/imagini/copil_mate.jpg" 
+                       preload="none" 
+                       class="video-prezentare-profa">
+                    
+                    <source src="/resurse/video/copil_la_tabla.mp4" type="video/mp4">
+                    <source src="/resurse/video/copil_la_tabla.webm" type="video/webm">
+                    
+                    <track label="Română" kind="subtitles" srclang="ro" src="/resurse/video/subtitrare_ro.vtt" default>
+                    <track label="English" kind="subtitles" srclang="en" src="/resurse/video/subtitrare_en.vtt">
+                    
+                    Browserul tău nu suportă tag-ul video.
+                </video>
             </div>
+        </div>
+    </div>
+</div>
             <p>Rata de promovare Evaluare Națională:</p>
             <meter value="98" min="0" max="100" low="40" high="80" optimum="100"></meter>
             <p>Locuri ocupate:</p>
@@ -444,7 +386,7 @@ Descarcă culegerea, dacă dorești să inveți singur.
 </section>
 <section id="statistici">
 <h2>Date utilizator</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Adresa ta IP identificată de server este: <span class="ip-utilizator"><strong><%= ip %></strong></span></p>
 </section>
 <section id="site-server">
 <h2>Date site și server</h2>
@@ -618,61 +560,9 @@ https://www.edu.ro/invatamant-preuniversitar#liceu<wbr>
         </section>
         <section id="inscriere">
             <h2>Înscriere  <i class="fa-regular fa-envelope fa-bounce"></i></h2>
-            <p>Formularul de înscriere va fi disponibil în curând.</p>
-
-         <section>
-        <h3>Date necesare pentru înscriere</h3>
-
-        <p>Nume complet</p>
-        <p>Email</p>
-        <p>Telefon</p>
-        <p>Mesaj suplimentar</p>
-        </section>
-
-         <p>Vă rugăm să reveniți după activarea formularului.</p>
-</section>
+            <p>Formularul de înscriere va fi disponibil în curând, in bara din meniu.</p>
 
     </main>
-<footer>
-
-    <address>
-        Telefon:
-        <a href="tel:+40700000000">+40 700 000 000</a>
-        <br><br>
-
-        Adresă:
-        <a href="https://www.google.com/maps?q=Facultatea+de+Matematica+si+Informatica+Bucuresti" target="_blank">
-            Str. Educației nr. 10<br>
-            Sector 3, București
-        </a>
-        <br><br>
-         <div id="mapa" style="margin-top:10px;"> 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9969.360407661121!2d26.10388092133286!3d44.43671778719025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff472f47f047%3A0x493984726f0235f9!2sFacultatea%20de%20Matematic%C4%83%20%C8%99i%20Informatic%C4%83!5e0!3m2!1sro!2sro!4v1772451060765!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-        Email:
-        <a href="mailto:contact@eduplease.ro">EduPlease@gmail.com</a>
-        <br><br>
-
-        WhatsApp:
-        <a href="https://wa.me/40700000000" target="_blank">
-            Scrie-ne pe WhatsApp!
-        </a>
-    </address>
-    <p>Suntem sustinuți de:</p>
-    <a href="https://www.edu.ro" target="_blank">
-        Ministerul Educației</a>
-    <p>
-        <small>
-            &copy; Brezeanu Irina-Maria — creat la data de 
-            <time datetime="2026-02-01">1 februarie 2026</time>
-        </small>
-    </p>
-    <a href="#top" id="link-top">
-    <span class="sageata">&#129081;</span>
-    <span class="tooltip">Înapoi sus</span>
-</a>
-<p class="banner-proiect">Acesta este un proiect școlar!</p>
-</footer>
+<%- include('../fragmente/footer') %>
 </body>
             </html>
