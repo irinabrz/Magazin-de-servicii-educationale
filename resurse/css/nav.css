@@ -149,6 +149,16 @@ ul.meniu > li:hover > ul {
     color: #c4d1ec;
   }
 }
+tbody tr {
+  transition: all 0.75s ease;
+}
+tbody tr:hover {
+  background-color: var(--culoare-accent);
+}
+tbody tr:hover td {
+  font-size: 120%;
+}
+
 /*Link Top */
 #link-top:hover {
   background-color: var(--culoare-accent);

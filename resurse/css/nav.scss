@@ -155,7 +155,19 @@ ul.meniu {
         }
     }
 }
+tbody {
+  tr {
+    transition: all 0.75s ease;
 
+    &:hover {
+      background-color: var(--culoare-accent);
+
+      td {
+        font-size: 120%;
+      }
+    }
+  }
+}
 /*Link Top */
 #link-top {
     &:hover {
