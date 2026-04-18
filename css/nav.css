@@ -3,8 +3,6 @@ body {
   background: red !important;
 }
 
-/* 1. VARIABILE PROFA + ALE TALE */
-/* 2. STILURI GENERALE (DESKTOP) */
 nav {
   background-color: #8797bc;
   position: relative;
@@ -34,9 +32,6 @@ ul.meniu > li a {
   text-decoration: none;
   transition: all 0.3s linear;
 }
-ul.meniu > li {
-  /* SUBMENIU DESKTOP */
-}
 ul.meniu > li ul {
   display: none;
   position: absolute;
@@ -50,7 +45,6 @@ ul.meniu > li:hover > ul {
   display: block;
 }
 
-/* 3. TABLETĂ (900px) */
 @media (max-width: 900px) and (min-width: 701px) {
   .meniu > li > a {
     font-size: 0;
@@ -59,7 +53,6 @@ ul.meniu > li:hover > ul {
     font-size: 22px;
   }
 }
-/* 4. MOBIL (700px) - REPARATIA FINALA */
 @media (max-width: 700px) {
   .meniu > li > a {
     font-size: 0;
@@ -68,12 +61,13 @@ ul.meniu > li:hover > ul {
     font-size: 22px;
   }
 }
-/* 5. ALTE STILURI (Top Link etc) */
+
 #link-top:hover {
   opacity: 1;
 }
 #link-top:hover .sageata {
   transform: translate(-50%, -50%) scale(1.4);
 }
+
 
 /*# sourceMappingURL=nav.css.map */

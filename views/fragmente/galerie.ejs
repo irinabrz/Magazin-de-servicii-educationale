@@ -1,0 +1,17 @@
+<section id="galerie-statica">
+    <h2>Galerie Foto - <%- new Date().toLocaleDateString() %></h2>
+    <div class="grid-galerie">
+        <% imagini.forEach((img, indice) => { %>
+            <figure>
+                <picture>
+                    <source srcset="<%- cale + 'mic-' + img.cale_fisier %>" media="(max-width: 500px)">
+                    <img src="<%- cale + img.cale_fisier %>" 
+                         alt="<%- img.alt || img.cale_fisier %>" 
+                         title="<%- img.text_descriere %>"> </picture>
+                <figcaption>
+                    <span class="index-roman"></span> <%= img.text_descriere %>
+                </figcaption>
+            </figure>
+        <% }); %>
+    </div>
+</section>

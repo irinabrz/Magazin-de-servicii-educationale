@@ -1,0 +1,96 @@
+{
+  "cale_galerie": "/resurse/galerie/",
+  "imagini": [
+    {
+      "cale_fisier": "img1.jpg",
+      "titlu": "Ora primaverii",
+      "text_descriere": "Timpul sa vina primavara!.",
+      "anotimp": "primavara",
+      "alt": "Ora primaverii",
+      "autor": "John Doe",
+      "sursa": "https://pixabay.com"
+    },
+      {
+      "cale_fisier": "img2.jpg",
+      "titlu": "Rechizite primavaratice",
+      "text_descriere": "Rechizite reduse de primavara. Folositi codul nostru!",
+      "anotimp": "primavara",
+      "alt": "Rechizite primavaratice",
+      "autor": "John Doe",
+      "sursa": "https://pixabay.com"
+    },
+      {
+      "cale_fisier": "img3.jpg",
+      "titlu": "Calendarul primavaratic",
+      "text_descriere": "Numaram zilele pana la....vacanta!",
+      "anotimp": "primavara",
+      "alt": "Calendarul primavaratic",
+      "autor": "John Doe",
+      "sursa": "https://pixabay.com"
+    },
+      {
+      "cale_fisier": "img4.jpg",
+      "titlu": "Invatat la soarele primaverii",
+      "text_descriere": "Relax!",
+      "anotimp": "primavara",
+      "alt": "Invatat la soarele primaverii",
+      "autor": "John Doe",
+      "sursa": "https://pixabay.com"
+    },
+      {
+      "cale_fisier": "img5.jpg",
+      "titlu": "Planificarea cursurilor",
+      "text_descriere": "Planificarea cursurilor.Opinii?Scrieti-ne!",
+      "anotimp": "primavara",
+      "alt": "Planificare",
+      "autor": "John Doe",
+      "sursa": "https://pixabay.com"
+    },
+      {
+      "cale_fisier": "img6.jpg",
+      "titlu": "Tic-tac!",
+      "text_descriere": "Tic-tac!Mai e putin pana la bac!",
+      "anotimp": "primavara",
+      "alt": "Tic-tac!",
+      "autor": "John Doe",
+      "sursa": "https://pixabay.com"
+    },
+      {
+      "cale_fisier": "img7.jpg",
+      "titlu": "Simulari de examen primavara aceasta!",
+      "text_descriere": "Simulari de examen primavara aceasta!",
+      "anotimp": "primavara",
+      "alt": "Simulari",
+      "autor": "John Doe",
+      "sursa": "https://pixabay.com"
+    },
+      {
+      "cale_fisier": "img8.jpg",
+      "titlu": "Greu deschizi caietul iarna",
+      "text_descriere": "O dimineață geroasă.",
+      "anotimp": "iarna",
+      "alt": "Greu deschizi caietul iarna",
+      "autor": "John Doe",
+      "sursa": "https://pixabay.com"
+    },
+      {
+      "cale_fisier": "img9.jpg",
+      "titlu": "Deja te gandesti la vacanta?",
+      "text_descriere": "Deja te gandesti la vacanta?Nu mai este mult.",
+      "anotimp": "primavara",
+      "alt": "Vacanta",
+      "autor": "John Doe",
+      "sursa": "https://pixabay.com"
+    },
+      {
+      "cale_fisier": "img10.jpg",
+      "titlu": "Agenda",
+      "text_descriere": "Incurajam scrisul in agende!",
+      "anotimp": "primavara",
+      "alt": "Agenda",
+      "autor": "John Doe",
+      "sursa": "https://pixabay.com"
+    }
+    
+  ]
+}
