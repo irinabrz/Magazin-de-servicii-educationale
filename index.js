@@ -8,8 +8,8 @@ const app = express();
 const PORT = 8080;
 var obGlobal = { 
     obErori: null,
-    folderScss: path.join(__dirname, 'resurse/css'),
-    folderCss: path.join(__dirname, 'resurse/css')
+    folderScss: path.join(__dirname, 'resurse/scss'), // <--- MODIFICAT
+    folderCss: path.join(__dirname, 'resurse/css')   // Rămâne la fel
 };
 const vect_foldere = ["temp", "logs", "backup", "fisiere_uploadate"];
 for (let folder of vect_foldere) {
@@ -54,29 +54,25 @@ function compileazaScss(caleScss, caleCss) {
     let scssAbsolut = path.isAbsolute(caleScss) ? caleScss : path.join(obGlobal.folderScss, caleScss);
     let numeFisierCss = caleCss ? caleCss : path.basename(caleScss, '.scss') + '.css';
     let cssAbsolut = path.isAbsolute(numeFisierCss) ? numeFisierCss : path.join(obGlobal.folderCss, numeFisierCss);
-
-    // 1. BACKUP - Forțăm citirea fișierului existent înainte de orice altceva
     if (fs.existsSync(cssAbsolut)) {
         let folderBackupCss = path.join(__dirname, 'backup/resurse/css');
         if (!fs.existsSync(folderBackupCss)) fs.mkdirSync(folderBackupCss, { recursive: true });
         
         try {
-            // Folosim readFileSync + writeFileSync pentru a fi siguri că transferăm tot conținutul
             let continutVechi = fs.readFileSync(cssAbsolut, 'utf8');
             fs.writeFileSync(path.join(folderBackupCss, path.basename(cssAbsolut)), continutVechi);
-            console.log(`📂 Backup creat pentru ${path.basename(cssAbsolut)}`);
+            console.log(` Backup creat pentru ${path.basename(cssAbsolut)}`);
         } catch (err) {
-            console.error("❌ Eroare la backup CSS:", err);
+            console.error(" Eroare la backup CSS:", err);
         }
     }
 
-    // 2. COMPILARE
     try {
         const rezultat = sass.compile(scssAbsolut);
         fs.writeFileSync(cssAbsolut, rezultat.css);
-        console.log(`🎨 [SCSS] Compilat cu succes: ${path.basename(scssAbsolut)}`);
+        console.log(` [SCSS] Compilat cu succes: ${path.basename(scssAbsolut)}`);
     } catch (err) {
-        console.error("❌ Eroare Compilare SCSS:", err);
+        console.error(" Eroare Compilare SCSS:", err);
     }
 }
 
@@ -144,15 +140,10 @@ app.get(/^\/(.*)/, (req, res) => {
     });
 });
 
-// --- COMPILARE ȘI WATCHER (La final, înainte de listen) ---
-
 if (fs.existsSync(obGlobal.folderScss)) {
-    // Inițial
     fs.readdirSync(obGlobal.folderScss).forEach(fisier => {
         if (path.extname(fisier) === '.scss') compileazaScss(fisier);
     });
-
-    // Pe parcurs
     fs.watch(obGlobal.folderScss, (eveniment, numeFisier) => {
         if (numeFisier && path.extname(numeFisier) === '.scss') {
             setTimeout(() => {
