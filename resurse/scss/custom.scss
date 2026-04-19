@@ -1,90 +1,122 @@
-// --- 1. VARIABILELE TALE (Cerințele de customizare) ---
 
-// Familia de font implicită
 $font-family-base: "Verdana", sans-serif;
-
-// Dimensiunea literelor headingurilor
 $h1-font-size: 4rem;
 $h2-font-size: 2.5rem;
-
-// Dimensiunea razelor de border
 $border-radius: 30px; 
 $border-radius-lg: 50px;
+$primary: #ff00ff;
+$btn-primary-color: #ffffff;
 
-// Culori de font (pentru butoane/text)
-$primary: #ff00ff; // Rozul tău
-$btn-primary-color: #ffffff; // Culoare litere buton
-
-// Dimensiuni de ecran diferite (Breakpoints medii și mari)
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
-  md: 820px,   // Mediu customizat
-  lg: 1120px,  // Mare customizat
+  md: 820px,
+  lg: 1120px,
   xl: 1200px
 );
 
-// Variabilă aleasă de tine (ex: distanțarea coloanelor)
 $grid-gutter-width: 2rem;
-
-// --- 2. IMPORT BOOTSTRAP ---
 @import "../../node_modules/bootstrap/scss/bootstrap";
-
-// --- 3. TEME CUSTOM (Cromatică schimbată) ---
 .tema-scoala {
     background-color: #8797bc;
     color: #172645;
 }
-
 .tema-noapte {
     background-color: #172645;
     color: #ffffff;
-    // Exemplu de utilizare variabilă custom pentru font h2 în această temă
     h2 { color: $primary; } 
 }
 
-/// --- 4. ILUSTRARE DIMENSIUNI ECRAN (Cerința cu coloanele) ---
-
 .sectiune-demonstrativa {
-    display: flex;       // Folosim flex pentru a controla alinierea
-    justify-content: flex-start; // Îl ținem mereu în stânga
+    display: flex;
+    justify-content: flex-start;
     padding: 2rem 0;
 }
 
 .caseta-speciala {
     background-color: white;
-    border: 4px solid $primary; // Border mai gros ca să iasă în evidență
+    border: 4px solid $primary;
     padding: 20px;
     border-radius: $border-radius;
-    transition: width 0.4s ease; // Face trecerea între dimensiuni fluidă
-    
-    // TEXT AJUTĂTOR (ca să înțelegi ce se întâmplă în browser)
+    transition: width 0.4s ease;
     &::after {
         display: block;
         margin-top: 10px;
         font-weight: bold;
         color: $primary;
     }
-
-    // MOBIL (Implicit): Ocupă tot (1/1)
     width: 100%;
     &::after { content: "Ecran MIC: Lățime 100%"; }
-
-    // ECRAN MEDIU (peste 820px): Ocupă jumătate (1/2)
     @include media-breakpoint-up(md) {
         width: 50%;
         &::after { content: "Ecran MEDIU (>820px): Lățime 50%"; }
     }
-
-    // ECRAN MARE (peste 1120px): Ocupă o treime (1/3)
     @include media-breakpoint-up(lg) {
         width: 33.33%;
         &::after { content: "Ecran MARE (>1120px): Lățime 33.33%"; }
     }
 }
-// --- 5. CORECTARE BOOTSTRAP ---
-// Dacă Bootstrap a stricat meniul sau alte elemente:
 nav ul.meniu {
     padding-left: 0 !important;
     list-style-type: none;
+}
+
+hr.linie-custom {
+    border: none; 
+    height: 16px;
+    border-radius: 20px; 
+    background: repeating-linear-gradient(
+        0deg,
+        $primary,         
+        $primary 2px,     
+        transparent 2px,
+        transparent 4px 
+    );
+    
+    margin: 40px 0;
+    opacity: 1;
+    border-top: 1px solid $primary;
+    border-bottom: 1px solid $primary;
+}
+.reflexie-wrapper {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.text-original {
+    position: relative;
+    z-index: 2;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 4rem;
+    color: #000;
+    line-height: 1;
+    margin: 0;
+}
+
+.text-reflexie {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    
+    font-family: serif;
+    font-weight: bold;
+    font-size: 4rem;
+    color: #000;
+    line-height: 1;
+    margin: 0;
+    white-space: nowrap;
+    opacity: 0.2;
+    filter: blur(2px);
+transform-origin: top left;
+    transform: scaleY(-1) skewX(-50deg) translateY(-45px);
+    
+    transition: transform 0.3s ease-in-out;
+    pointer-events: none;
+}
+.reflexie-wrapper:hover .text-reflexie {
+    transform: scaleY(-1.4) skewX(-50deg) translateY(-45px);
 }

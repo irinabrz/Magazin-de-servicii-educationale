@@ -10994,3 +10994,56 @@ nav ul.meniu {
   padding-left: 0 !important;
   list-style-type: none;
 }
+
+hr.linie-custom {
+  border: none;
+  height: 16px;
+  border-radius: 20px;
+  background: repeating-linear-gradient(0deg, #ff00ff, #ff00ff 2px, transparent 2px, transparent 4px);
+  margin: 40px 0;
+  opacity: 1;
+  border-top: 1px solid #ff00ff;
+  border-bottom: 1px solid #ff00ff;
+}
+
+.reflexie-wrapper {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.text-original {
+  position: relative;
+  z-index: 2;
+  font-family: serif;
+  font-weight: bold;
+  font-size: 4rem;
+  color: #000;
+  line-height: 1;
+  margin: 0;
+}
+
+.text-reflexie {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-family: serif;
+  font-weight: bold;
+  font-size: 4rem;
+  color: #000;
+  line-height: 1;
+  margin: 0;
+  white-space: nowrap;
+  opacity: 0.2;
+  filter: blur(2px);
+  transform-origin: top left;
+  transform: scaleY(-1) skewX(-50deg) translateY(-45px);
+  transition: transform 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.reflexie-wrapper:hover .text-reflexie {
+  transform: scaleY(-1.4) skewX(-50deg) translateY(-45px);
+}
