@@ -387,60 +387,85 @@ footer{
     border-radius: 12px; 
     }
 @media print {
-    #grid-pagina, main, section, article, header, footer {
-        display: block  ;
-        width: 100%  ;
-        position: static  ;
+    #grid-pagina, main, section, article, header, footer, nav {
+        display: block !important;
+        width: 100% !important;
+        position: static !important;
+        background: none !important;
+        color: black !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        transform: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        max-height: none !important;
     }
     img, video, iframe, canvas, object, figure, figcaption, 
     .container-iframe, .taburi-iframe, #link-top, .burger, #toggle {
-        display: none  ;
+        display: none !important;
     }
     a {
-        text-decoration: none  ;
-        color: black  ;
-        background: none  ;
+        text-decoration: none !important;
+        color: black !important;
+        background: none !important;
     }
     header h1 {
-        display: block  ;
-        text-align: center  ;
-        margin: 50px auto 20px auto  ;
-        border: none  ;
-        background: none  ;
-    }
-    nav {
-        display: block  ;
+        display: block !important;
+        text-align: center !important;
+        margin: 50px auto 20px auto !important;
+        border: none !important;
+        background: none !important;
+        color: black !important;
     }
     ul.meniu {
-        display: block  ;
-        list-style-type: disc  ;
-        padding-left: 40px  ;
+        display: block !important;
+        list-style-type: disc !important;
+        padding-left: 40px !important;
+        margin: 20px 0 !important;
+        visibility: visible !important;
     }
+
     ul.meniu li {
-        display: list-item  ;
-        width: auto  ;
-        border: none  ;
-        background: none  ;
-        padding: 5px 0  ;
+        display: list-item !important;
+        width: auto !important;
+        border: none !important;
+        background: none !important;
+        padding: 5px 0 !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+    ul.meniu li a {
+        display: inline-flex !important;
+        align-items: center !important;
+        color: black !important;
+        font-size: 12pt !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        transform: none !important;
     }
     ul.meniu ul {
-        display: block  ;
-        list-style-type: circle  ;
-        padding-left: 20px  ;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: static !important;
+        transform: none !important;
+        list-style-type: circle !important;
+        padding-left: 30px !important;
     }
     nav { page-break-after: always; }
     footer { page-break-before: always; }
     .banner-proiect {
-        display: block  ;
-        position: absolute  ;
-        top: 0  ;
-        right: 0  ;
-        width: 50%  ;
-        border: 3px double black  ; 
-        padding: 10px  ;
-        text-align: center  ;
-        background: white  ;
-        z-index: 10000  ;
+        display: block !important;
+        position: absolute !important;
+        top: 0 !important;
+        right: 0 !important;
+        width: 50% !important;
+        border: 3px double black !important; 
+        padding: 10px !important;
+        text-align: center !important;
+        background: white !important;
+        z-index: 10000 !important;
     }
     body::after {
         content: "Brezeanu \A Irina-Maria"; 
@@ -456,16 +481,14 @@ footer{
         justify-content: center;
         font-size: 50pt;
         font-weight: bold;
-        color: rgba(0, 0, 0, 0.3)  ;
+        color: rgba(0, 0, 0, 0.3) !important;
         z-index: 9999;
         pointer-events: none;
+        opacity: 0.3;
     }
-    @page :left {
-        margin: 1cm 1cm 1cm 2cm;
-    }
-    @page :right {
-        margin: 1cm 2cm 1cm 1cm;
-    }
+
+    @page :left { margin: 1cm 1cm 1cm 2cm; }
+    @page :right { margin: 1cm 2cm 1cm 1cm; }
 }
 .video-prezentare-profa {
     width: 90%; 

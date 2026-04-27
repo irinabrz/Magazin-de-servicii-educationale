@@ -8,8 +8,8 @@ const app = express();
 const PORT = 8080;
 var obGlobal = { 
     obErori: null,
-    folderScss: path.join(__dirname, 'resurse/scss'), // <--- MODIFICAT
-    folderCss: path.join(__dirname, 'resurse/css')   // Rămâne la fel
+    folderScss: path.join(__dirname, 'resurse/scss'),
+    folderCss: path.join(__dirname, 'resurse/css')
 };
 const vect_foldere = ["temp", "logs", "backup", "fisiere_uploadate"];
 for (let folder of vect_foldere) {

@@ -130,9 +130,16 @@ ul.meniu {
             }
 
             ul {
-                display: none;
-                position: static;
+                display: block;
+                position: static; 
                 background-color: rgba(0, 0, 0, 0.1);
+                visibility: hidden;
+                max-height: 0;
+                opacity: 0;
+                transform: scale(0); 
+                transform-origin: top center;
+                transition: all 1s ease-in-out;
+                overflow: hidden;
                 
                 li a {
                     padding: 15px 40px;
@@ -142,17 +149,23 @@ ul.meniu {
             }
 
             &:hover > ul {
-                display: block;
+                visibility: visible;
+                opacity: 1;
+                max-height: 500px;
+                transform: scale(1);
             }
         }
-        > li:first-child > a {
-            color: $bg-light  ;
-            i { color: $bg-light  ; }
+                > li:first-child > a {
+            color: transparent;
+            i { 
+                color: $bg-light !important;
+                display: inline-block !important;
+            }
+            
             &:hover {
-                color: $blue-light  ;
-                i { color: $blue-light  ; }
-            }
-        }
+                color: $blue-light;
+                i { color: $blue-light; }
+            }}
     }
 }
 tbody {
